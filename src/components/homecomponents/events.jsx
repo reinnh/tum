@@ -8,7 +8,7 @@ import tuma from '../../assets/TUMA.jpg'
 export default function EventSection() {
     const scrollRef=useRef(null);
     return (
-        <div   className=" mx-auto p-2 grid grid-cols-1 md:grid-cols-3 gap-6 bg-gray-100">
+        <div   className="container mx-auto p-2 grid grid-cols-1 md:grid-cols-3 gap-6 bg-gray-100">
             {/* Events Section */}
             <div  ref={scrollRef} className=" overflow-y-auto h-100" style={{scrollbarWidth:'none', }}>
                 <h2 className="text-xl font-bold border-b mb-4 pb-2 border-gray-200">EVENTS</h2>
@@ -33,7 +33,7 @@ export default function EventSection() {
             {/* Notice Board Section */}
             <div>
                 <h2 className="text-xl font-bold border-b mb-4 pb-2 border-gray-200">NOTICE BOARD</h2>
-                <div className="space-y-2">
+                <div className="space-y-5 pl-2">
                     {notices.map((notice, index) => (
                         <div className="">
                             <motion.p key={index} whileHover={{ x: 5 }} className=" cursor-pointer">{notice} <ArrowRight size={16} /></motion.p>

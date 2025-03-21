@@ -13,8 +13,8 @@ export const BottomFooter=()=>{
 
 const Footer = () => {
     return (
-      <footer className="bg-gray-900 text-white pt-10">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-5">
+      <footer className="bg-gray-900 text-white pt-10 mt-5">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-5 md:p-1">
           {footerData.map((section, index) => (
             <div key={index}>
               <h3 className="text-lg font-semibold mb-2 border-b-2 border-green-500 inline-block">

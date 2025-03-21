@@ -5,7 +5,7 @@ export default function NewsSection() {
 
   
     return (
-      <div className="p-6">
+      <div className="container px-2 py-4">
         <h2 className="text-3xl font-bold">
           LATEST <span className="text-green-600">NEWS</span>
         </h2>

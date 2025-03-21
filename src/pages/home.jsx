@@ -38,11 +38,11 @@ const Home = () => {
             <NavBar />
             <div className="w-full flex flex-col items-center font-[arial] bg-gray-100 pt-[80px]">
                 {/* Top Links & Socials */}
-                <div className="w-full flex flex-col md:flex-row md:justify-between md:h-15 items-center px-4 border bg-[#D89837] text-gray-100">
+                <div className="w-full flex flex-col py-2 md:flex-row md:justify-between md:h-15 items-center px-4 border bg-[#D89837] text-gray-100">
                     {["Financial Statements", "Library Service", "Multidisciplinary Conference", "TUM Journal"].map((item, index) => (
                         <a key={index} href="">{item}</a>
                     ))}
-                    <div className="flex gap-3 ">
+                    <div className="flex gap-3 py-2 ">
                         {[FaFacebook, FaTwitter, FaYoutube].map((Icon, index) => (
                             <div key={index} className="bg-green-800 text-white cursor-pointer w-9 h-9 flex items-center justify-center rounded-full">
                                 <Icon />
@@ -52,8 +52,8 @@ const Home = () => {
                 </div>
                 
                 {/* Contact Section */}
-                <div className=" flex  w-full flex-col items-center   lg:flex-row lg:px-5 lg:justify-between ">
-                    <img src={logo} alt="logo" className="w-20" />
+                <div className="py-2 flex  w-full flex-col gap-4 items-center   lg:flex-row lg:px-5 lg:justify-between ">
+                    <img src={logo} alt="logo" className="w-15 md:w-20" />
                     <div className=" w-full flex flex-col gap-y-5 md:flex-row md:gap-7 lg:justify-end md:px-10 md:items-center md:justify-center">
                     {contacts.map((item, index) => (
                         <div key={index} className="flex flex-col items-center md:flex-row md:gap-x-5 ">
@@ -76,16 +76,17 @@ const Home = () => {
                             <img src={info.src} alt="" className="w-full" />
                             <div className={`leading-7 ${index === 0 ? 'text-green-700' : 'text-[15px] font-[arial]'}`}>
                                 {info.heading}
-                                <hr className="w-[60px] border-2 border-green-900" />
+                                <hr className="w-[60px] border-2 border-green-900"/>
                             </div>
-                            <p className={`text-sm text-gray-600 ${index === 0 ? 'font-mono' : ''}`}>{info.description}</p>
+                            <p className={`text- text-gray-600 ${index === 0 ? 'font-mono ' : ''}`}>{info.description}</p>
                             <GreenButton text={info.buttonInfo} />
                         </div>
                     ))}
                 </div>
                 
                 {/* Call to Action */}
-                <div className="w-full md:p-10 bg-green-800 text-white p-2 flex flex-col gap-10">
+               <div className="w-full bg-green-800 flex justify-center">
+               <div className="container  bg-green-800 text-white p-2  flex flex-col gap-10">
                     {[{ text: "Seize the opportunity and take charge of your destiny today by joining our dynamic community of learners at sea level.", btn: "Apply Now" },
                       { text: "Need funding for a student loan or scholarship?", btn: "Apply Here" }
                     ].map((item, index) => (
@@ -97,8 +98,11 @@ const Home = () => {
                         </div>
                     ))}
                 </div>
+               </div>
             </div>
+            <div className="py-3 flex justify-center ">
             <NewsSection/>
+            </div>
             <EventSection/>
 
             <Footer/>

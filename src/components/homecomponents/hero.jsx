@@ -9,7 +9,7 @@ import "swiper/css/effect-fade";
 
 export default function Hero() {
   return (
-    <div className="hidden md:block relative w-full h-screen">
+    <div className=" relative w-full h-screen">
       <Swiper
         modules={[Autoplay, Navigation, EffectFade]}
         spaceBetween={0}

@@ -165,30 +165,32 @@ export const Elearning = () => {
 
  export function IndustrialAttatcmentLogin() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
+    <div className="flex min-h-screen items-center justify-center bg-gray-50">
       <div className="w-96 shadow-lg">
-        <div className="p-6">
-          <div className="text-center mb-4">
+        <div className="flex flex-col gap-8 bg-white shadow-2xl border-1 border-gray-300 shadow-gray-700 pb-4">
+          <div className="text-center mb-4 flex flex-col  bg-gray-100 py-2 gap-2">
             <img src="/logo.png" alt="Logo" className="mx-auto h-12" />
-            <h2 className="text-lg font-semibold text-red-500">Industrial Attachment Portal (IAP)</h2>
+            <h2 className="text-lg  text-red-500">Industrial Attachment Portal (IAP)</h2>
+          </div>
+          <div className="w-full  text-center text-sm">
             <p className="text-gray-500">Login to IAP</p>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-4 p-4">
             <div className="relative">
               <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
-              <input type="text" placeholder="Username" className="pl-10" />
+              <input type="text" placeholder="Username" className="pl-10 w-full  text-gray-500 rounded-sm border border-gray-200 py-2 outline-none focus:border-teal-300" />
             </div>
             <div className="relative">
-              <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
-              <input type="password" placeholder="Enter Password" className="pl-10" />
+              <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 " size={18} />
+              <input type="password" placeholder="Enter Password" className="outline-none rounded-sm text-gray-500 focus:border-teal-300 pl-10 w-full border border-gray-200 py-2" />
             </div>
-            <button className="w-full bg-teal-500 hover:bg-teal-600 flex items-center pl-4 text-white py-1.5 rounded-sm">
+            <button className="w-full border-teal-400 border hover:bg-teal-500 flex hover:text-white items-center pl-4 text-teal-300 justify-center py-2 transition duration-700 rounded-sm mt-8">
               <Lock className="mr-2" size={16} /> Login
             </button>
           </div>
-          <div className="mt-4 flex justify-between text-sm text-gray-500">
-            <a href="#" className="text-teal-500 hover:underline">Recover password</a>
-            <a href="#" className="text-teal-500 hover:underline">Sign Up</a>
+          <div className="mt-4 flex justify-between text-sm text-gray-500  flex-col items-center gap-1">
+            <a href="#" className="text-teal-500 ">Recover password</a>
+          <span><span>New To IAP</span> <a href="#" className="text-teal-500 ">Sign Up</a></span>
           </div>
         </div>
       </div>
@@ -198,54 +200,66 @@ export const Elearning = () => {
 
 export const OnlineClearance = () => {
     return (
-        <div
-            className="h-screen flex items-center justify-center bg-cover bg-center"
+      <>
+      <div className="font-[arial]">
+      <nav className="fixed left-0 right-0">
+        <div className="bg-[#82a738] container px-10 py-2 flex justify-between items-center text-white">
+            <div className="max-w-15 ">
+                <img src="/logo.png" alt="" className=""/>
+            </div>
+            <p className="hidden md:block">ONLINE STUDENT CLE`ARANCE SYSTEM</p>
+        </div>
+      </nav>
+      <div
+            className="h-screen flex items-center justify-center bg-cover bg-center md:pt-22"
             style={{ backgroundImage: `url(${bunner})` }}
         >
-            <div className="bg-white p-8 shadow-lg rounded-lg w-full max-w-sm">
-                <h2 className="text-2xl font-bold text-center mb-2">Login Account</h2>
-                <p className="text-center text-gray-500 mb-6">Online Student Clearance System</p>
+            <div className="bg-gray-50 p-8 shadow-lg  w-full max-w-md">
+                <div className="flex flex-col gap-y-2 py-8">
+                <p className="text-center text-2xl font-bold ">Login Account</p>
+                <p className="text-center text-gray-300 text-sm">Online Student Clearance System</p>
 
+                </div>
                 <form>
-                    <label className="block mb-2 text-sm font-medium text-gray-600">
+                    <label className="block mb-2 text-sm  text-gray-400">
                         Student Email
                     </label>
                     <input
                         type="email"
                         placeholder="e.g barc188j2017@students.tum.ac.ke"
-                        className="w-full px-4 py-2 border rounded-md mb-4"
+                        className="w-full px-4 py-3 rounded-sm border border-gray-200  mb-5 outline-none focus:border-1 focus:border-[#82a738] hover:border-[#82a738]"
                     />
 
-                    <label className="block mb-2 text-sm font-medium text-gray-600">
+                    <label className="block mb-2 text-sm  text-gray-400">
                         Password
                     </label>
                     <input
                         type="password"
-                        className="w-full px-4 py-2 border rounded-md mb-4"
+                        className="w-full px-4 py-3 rounded-sm border border-gray-200  mb-5 outline-none focus:border-1 focus:border-[#82a738] hover:border-[#82a738]"
                     />
 
-                    <a href="#" className="text-sm text-green-600 cursor-pointer hover:underline">
+                    <a href="#" className="text-sm text-[#82a738] cursor-pointer hover:underline">
                         Forgot password?
                     </a>
 
                     <button
                         type="submit"
-                        className="w-full mt-4 bg-green-600 text-white py-2 cursor-pointer rounded-md hover:bg-green-700"
+                        className="w-full mt-4 bg-[#82a738] text-white py-3 cursor-pointer rounded-sm hover:opacity-90"
                     >
                          Login
                     </button>
                 </form>
 
-                <div className="mt-4 bg-yellow-100 p-3 text-sm text-yellow-800 rounded-md">
-                    ℹ You are required to create an account to apply for Online Student
-                    Clearance and Caution Fees Refund
-                </div>
-
-                <button className="w-full mt-4 bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">
+                <div className="mt-4 bg-[#fff3cd] p-5 flex flex-col text-sm text-yellow-800 rounded-md gap-4 ">
+                   <p> <span className="font-extrabold ">i</span> You are required to create an account to apply for Online Student    Clearance and Caution Fees Refund</p>
+                <button className="w-full mt-4 bg-blue-500 text-white py-3 rounded-sm hover:bg-blue-400">
                     Create Account Now ➜
                 </button>
+                </div>
             </div>
         </div>
+      </div>
+      </>
     );
 };
 
