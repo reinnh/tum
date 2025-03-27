@@ -1,3 +1,5 @@
+//footer BootomFoter is the yellowish most bottom , both icorporate to build complete footer component
+
 import { footerData } from "../../utils/constants";
 
 export const BottomFooter=()=>{

@@ -6,38 +6,165 @@ import tumx from '../assets/TUMX.jpg'
 import tuma from '../assets/TUMA.jpg'
 import tume from '../assets/TUME.jpg'
 import banner from '../assets/banner1.jpg'
-import tum_tn2412085 from'../assets/tum_tn2412085.jpg'
-import tum_tn2412086 from'../assets/tum_tn2412086.jpg'
-import tum_tn2412087 from'../assets/tum_tn2412087.jpeg'
-import tum_tn2501003 from'../assets/tum_tn2501003.jpg'
-import TN2501004 from'../assets/TUM_TN2501004.jpg'
-import TUM_TN2501005 from'../assets/TUM_TN2501005.jpg'
-import TUM_TN2501006 from'../assets/TUM_TN2501006.jpg'
-import TUM_TN2501007 from'../assets/TUM_TN2501007.jpg'
-import TUM_TN2501008 from'../assets/TUM_TN2501008.jpg'
-import TUM_TN2501009 from'../assets/TUM_TN2501009.jpg'
-import TUM_TN2501010 from'../assets/TUM_TN2501010.jpg'
-import TUM_TN2501012 from'../assets/TUM_TN2502011.jpg'
-import TUM_TN2501013 from'../assets/TUM_TN2502012.jpg'
-import TUM_TN2501014 from'../assets/TUM_TN2502013.jpg'
-import TUM_TN2501015 from'../assets/TUM_TN2502014.jpg'
-import TUM_TN2501016 from'../assets/TUM_TN2502015.jpg'
-import TUM_TN2501017 from'../assets/TUM_TN2502017.jpg'
-import TUM_TN2501018 from'../assets/TUM_TN2502019 (1).jpg'
-import TUM_TN2501019 from'../assets/TUM_TN2502019.jpg'
-import TUM_TN2501020 from'../assets/TUM_TN2502021 (1).jpg'
-import TUM_TN2501021 from'../assets/TUM_TN2502021.jpg'
-import TUM_TN2501022 from'../assets/TUM_TN2502022.jpg'
-import TUM_TN2501023 from'../assets/TUM_TN2502023.jpg'
-import TUM_TN2501024 from'../assets/TUM_TN2503024.jpg'
-import TUM_TN2501025 from'../assets/TUM_TN2503025.jpeg'
-import TUM_TN2501026 from'../assets/TUM_TN2503027.jpeg'
+import tum_tn2412085 from '../assets/tum_tn2412085.jpg'
+import tum_tn2412086 from '../assets/tum_tn2412086.jpg'
+import tum_tn2412087 from '../assets/tum_tn2412087.jpeg'
+import tum_tn2501003 from '../assets/tum_tn2501003.jpg'
+import TN2501004 from '../assets/TUM_TN2501004.jpg'
+import TUM_TN2501005 from '../assets/TUM_TN2501005.jpg'
+import TUM_TN2501006 from '../assets/TUM_TN2501006.jpg'
+import TUM_TN2501007 from '../assets/TUM_TN2501007.jpg'
+import TUM_TN2501008 from '../assets/TUM_TN2501008.jpg'
+import TUM_TN2501009 from '../assets/TUM_TN2501009.jpg'
+import TUM_TN2501010 from '../assets/TUM_TN2501010.jpg'
+import TUM_TN2501012 from '../assets/TUM_TN2502011.jpg'
+import TUM_TN2501013 from '../assets/TUM_TN2502012.jpg'
+import TUM_TN2501014 from '../assets/TUM_TN2502013.jpg'
+import TUM_TN2501015 from '../assets/TUM_TN2502014.jpg'
+import TUM_TN2501016 from '../assets/TUM_TN2502015.jpg'
+import TUM_TN2501017 from '../assets/TUM_TN2502017.jpg'
+import TUM_TN2501018 from '../assets/TUM_TN2502019 (1).jpg'
+import TUM_TN2501019 from '../assets/TUM_TN2502019.jpg'
+import TUM_TN2501020 from '../assets/TUM_TN2502021 (1).jpg'
+import TUM_TN2501021 from '../assets/TUM_TN2502021.jpg'
+import TUM_TN2501022 from '../assets/TUM_TN2502022.jpg'
+import TUM_TN2501023 from '../assets/TUM_TN2502023.jpg'
+import TUM_TN2501024 from '../assets/TUM_TN2503024.jpg'
+import TUM_TN2501025 from '../assets/TUM_TN2503025.jpeg'
+import TUM_TN2501026 from '../assets/TUM_TN2503027.jpeg'
 
-
-import hero1 from '../assets/hero1.jpg'; 
-import hero2 from '../assets/hero2.jpg'; 
-import hero3 from '../assets/hero3.jpg'; 
+//heroes images
+import hero1 from '../assets/hero1.jpg';
+import hero2 from '../assets/hero2.jpg';
+import hero3 from '../assets/hero3.jpg';
 import hero4 from '../assets/hero4.jpg';
+
+//events images
+
+import event1 from '../assets/events/event1.jpg';
+import event2 from '../assets/events/event2.jpeg';
+import event3 from '../assets/events/event3.jpg';
+import event4 from '../assets/events/event4.jpg';
+import event5 from '../assets/events/event5.jpg';
+import event6 from '../assets/events/event6.jpg';
+import event7 from '../assets/events/event7.jpg';
+import event8 from '../assets/events/event8.jpg';
+import event9 from '../assets/events/event9.jpg';
+import event10 from '../assets/events/event10.jpg';
+import event11 from '../assets/events/event11.jpg';
+import event12 from '../assets/events/event12.jpg';
+import event13 from '../assets/events/event13.jpg';
+import event14 from '../assets/events/event14.jpg';
+import event15 from '../assets/events/event15.jpg';
+import event16 from '../assets/events/event16.jpg';
+import event17 from '../assets/events/event17.jpg';
+
+
+export const eventsArticles = [
+  {
+    title: "MAY INTAKE 2019 AT TUM",
+    date: "May 06, 2019",
+    location: "Main Campus Tudor",
+    image: event1
+  },
+  {
+    title: "TUM CONFERENCE & INNOVATIONS",
+    date: "Apr 03, 2019",
+    location: "KIZIWI HOSPITALITY TOURISM TRA",
+    image: event2
+  },
+  {
+    title: "6TH GRADUATION CEREMONY 2018",
+    date: "Dec 19, 2018",
+    location: "FOOTBALL LOWER PITCH",
+    image: event3
+  },
+  {
+    title: "ISO TRANSITION FROM",
+    date: "Oct 15, 2018",
+    location: "Main Campus",
+    image: event4
+  },
+  {
+    title: "WORK LIFE BALANCE",
+    date: "Oct 24, 2018",
+    location: "FOOTBALL LOWER PITCH",
+    image: event5
+  },
+  {
+    title: "MSA International Trade Fair",
+    date: "Aug 29, 2018",
+    location: "Mkomani Show Ground",
+    image: event6
+  },
+  {
+    title: "Graduation Day",
+    date: "Aug 30, 2018",
+    location: "Graduation Grounds",
+    image: event7
+  },
+  {
+    title: "Prayer Day",
+    date: "Jun 28, 2018",
+    location: "Assembly Hall",
+    image: event8
+  },
+  {
+    title: "Sports Day",
+    date: "Jun 28, 2018",
+    location: "Arena 41",
+    image: event9
+  },
+  {
+    title: "September Intake 2018",
+    date: "Jun 29, 2018",
+    location: "Respective Departments",
+    image: event10
+  },
+  {
+    title: "Culture Week",
+    date: "Jun 27, 2018",
+    location: "Main Campus",
+    image: event11
+  },
+  {
+    title: "Tree Planting Day",
+    date: "Jun 26, 2018",
+    location: "University Grounds",
+    image: event12
+  },
+  {
+    title: "Open Day",
+    date: "Jun 25, 2018",
+    location: "Main Campus",
+    image: event13
+  },
+  {
+    title: "Career Fair",
+    date: "Jun 24, 2018",
+    location: "University Hall",
+    image: event14
+  },
+  {
+    title: "Science Exhibition",
+    date: "Jun 23, 2018",
+    location: "Innovation Centre",
+    image: event15
+  },
+  {
+    title: "Alumni Meeting",
+    date: "Jun 22, 2018",
+    location: "Alumni Hall",
+    image: event16
+  },
+  {
+    title: "Freshers Orientation",
+    date: "Jun 21, 2018",
+    location: "Main Campus Auditorium",
+    image: event17
+  }
+];
+
 
 export const images = [
   { src: tuncampus },
@@ -49,15 +176,16 @@ export const images = [
   { src: tume }
 ]
 export const univerityInfo = [
-  { src:'',heading: "WELCOME TO OUR UNIVERSITY", description: "In 2013 Mombasa Polytechnic University College (MPUC) transitioned to the Technical University of Mombasa- a fully-fledged University. The University has FIVE well-established Schools and two Institutes namely; School of Applied and Health Sciences, School of Engineering and Technology, School of Humanit...",buttonInfo:"Read More" },
-  { src:tumProgramm,heading: "PROGRAMMES", description:"Walking with you all the way to create new paths where none exist",buttonInfo:" View Programmes" },
-  { src:research,heading: "RESEARCH", description: "The greatest attraction was a solar-powered hydroponic system designed specifica....",buttonInfo:"Read More" },
-  { src:tmy,heading: "CAMPUS LIFE", description: "Technical University of Mombasa takes pride in its Vision as a University of ..",buttonInfo:"Read More" },
-  
+  { src: null, heading: "WELCOME TO OUR UNIVERSITY", description: "In 2013 Mombasa Polytechnic University College (MPUC) transitioned to the Technical University of Mombasa- a fully-fledged University. The University has FIVE well-established Schools and two Institutes namely; School of Applied and Health Sciences, School of Engineering and Technology, School of Humanit...", buttonInfo: "Read More" },
+  { src: tumProgramm, heading: "PROGRAMMES", description: "Walking with you all the way to create new paths where none exist", buttonInfo: " View Programmes" },
+  { src: research, heading: "RESEARCH", description: "The greatest attraction was a solar-powered hydroponic system designed specifica....", buttonInfo: "Read More" },
+  { src: tmy, heading: "CAMPUS LIFE", description: "Technical University of Mombasa takes pride in its Vision as a University of ..", buttonInfo: "Read More" },
+
 ]
 
+//navBar components
 export const menuItems = [
-  { name: "Home", link: "#", children: [] },
+  { name: "Home", link: "/", children: [] },
   {
     name: "About",
     link: "#",
@@ -76,17 +204,17 @@ export const menuItems = [
     name: "Academics",
     link: "#",
     children: [
-      { name: "Schools", link: "#", children: [  { name: "School of Applied and Health Sciences", link: "" },{ name: "School of Business", link: "" },{ name: "School of Engineering and Technology", link: "" },{ name: "School of Humanity and Social Studies", link: "" },{ name: "Institute of Computing and Informatics", link: "" },] },
-      { name: "Institute", link: "#", children: [  { name: "Institute of Computing and Informatics", link: "" }, { name: "TVET Institute", link: "" },] },
-      { name: "Programmes", link: "#", children: [ { name: "UnderGraduate", link: "" },{ name: "Diploma", link: "" },{ name: "Certificate", link: "" },{ name: "Short Courses", link: "" },] },
+      { name: "Schools", link: "#", children: [{ name: "School of Applied and Health Sciences", link: "" }, { name: "School of Business", link: "" }, { name: "School of Engineering and Technology", link: "" }, { name: "School of Humanity and Social Studies", link: "" }, { name: "Institute of Computing and Informatics", link: "" },] },
+      { name: "Institute", link: "#", children: [{ name: "Institute of Computing and Informatics", link: "" }, { name: "TVET Institute", link: "" },] },
+      { name: "Programmes", link: "#", children: [{ name: "UnderGraduate", link: "" }, { name: "Diploma", link: "" }, { name: "Certificate", link: "" }, { name: "Short Courses", link: "" },] },
     ],
   },
   { name: "Research", link: "#", children: [] },
   {
     name: "PORTALS",
-    link: "#portals",
+    link: null,
     children: [
-      { name: "Staffs Portal", link: "/staffs",children:[   { name: "Intranet", link: "/intranet" },{ name: "HR Portal", link: "/hr" },] },
+      { name: "Staffs Portal", link: null , children: [{ name: "Intranet", link: "/intranet" }, { name: "HR Portal", link: "/hr" },] },
       { name: "E-Learning", link: "elearning" },
       { name: "Industrial Attachment", link: "/iattachment" },
       { name: "Online Clearance", link: "/onlineclearance" },
@@ -94,8 +222,8 @@ export const menuItems = [
       { name: "CAMPUS LIFE", link: "/campuslife" },
     ],
   },
-  { name: "Campus Life", link: "#", children: [] },
-  { name: "Media Desk", link: "#", children: [{ name: "News", link: "" },{ name: "Events", link: "" },{ name: "Noticeboard", link: "" },{ name: "Downloads", link: "" },{ name: "FAQs", link: "" },] },
+  { name: "Campus Life", link: "/campuslife", children: [] },
+  { name: "Media Desk", link: "#", children: [{ name: "News", link: "/news" }, { name: "Events", link: "/eventlist" }, { name: "Noticeboard", link: "" }, { name: "Downloads", link: "" }, { name: "FAQs", link: "" },] },
 ];
 
 export const footerData = [
@@ -124,27 +252,30 @@ export const footerData = [
   },
 ];
 //news section
-export  const newsItems = [
+export const newsItems = [
   {
     id: 1,
     image: TUM_TN2501025,
     title: "TUM alumni shine at the LampArt Short Fi...",
     author: "SALIM",
     date: "Mar 09, 2025",
+    link: '/'
   },
   {
     id: 2,
-    image:  TUM_TN2501023,
+    image: TUM_TN2501023,
     title: "TUM commemorates World Engineering Day",
     author: "SALIM",
     date: "Mar 05, 2025",
+    link: '/'
   },
   {
     id: 3,
-    image:TUM_TN2501024,
+    image: TUM_TN2501024,
     title: "CUE auditors give TUM's School of Medici...",
     author: "SALIM",
     date: "Feb 28, 2025",
+    link: '/'
   },
 ];
 
@@ -164,12 +295,12 @@ export const notices = [
   "INTERNAL AUDITOR JOB ADVERTISEMENT - EXTENSION",
 ];
 
-export const heropicture=[
-  {id:1,src:TUM_TN2501019},
-  {id:2,src:hero1},
-  {id:3,src:hero2},
-  {id:3,src:hero3},
-  {id:3,src:hero4}
+export const heropicture = [
+  { id: 1, src: TUM_TN2501019 },
+  { id: 2, src: hero1 },
+  { id: 3, src: hero2 },
+  { id: 3, src: hero3 },
+  { id: 3, src: hero4 }
 ]
 
 export const newsData = [
@@ -295,3 +426,97 @@ export const newsData = [
     date: "Jan 17, 2025",
   },
 ];
+
+
+//news page data
+export const newsArticles = [
+  {
+    title: "SGS lauds TUM for sustaining l...",
+    date: "Feb 22, 2025",
+    src: TUM_TN2501021
+  },
+  {
+    title: "TUM Signs MOU With Comoros Mar...",
+    date: "Feb 17, 2025",
+    src: TUM_TN2501019
+  },
+  {
+    title: "TUM Shines at the Kenya Univer...",
+    date: "Feb 17, 2025",
+    src: TUM_TN2501017
+  },
+  {
+    title: "TUM donates 207 units of blood...",
+    date: "Feb 16, 2025",
+    src: TUM_TN2501016
+  },
+  {
+    title: "Former TUM students showcase t...",
+    date: "Feb 14, 2025",
+    src: TUM_TN2501015
+  },
+  {
+    title: "TUM starts orienting its staff...",
+    date: "Feb 07, 2025",
+    src: TUM_TN2501014
+  },
+  {
+    title: "TUM Launches 3-Day Community O...",
+    date: "Feb 05, 2025",
+    src: TUM_TN2501013
+  },
+  {
+    title: "Prof Gichangi inducts TROPIMUN...",
+    date: "Feb 04, 2025",
+    src: TUM_TN2501012
+  },
+  {
+    title: "Renewable energy program monit...",
+    date: "Jan 31, 2025",
+    src: TUM_TN2501010
+  },
+  {
+    title: "TUM Hosts Delegation From Indo...",
+    date: "Jan 31, 2025",
+    src: TUM_TN2501009
+  },
+  {
+    title: "Hundreds Grace TUM's Open Day ...",
+    date: "Jan 28, 2025",
+    src: TUM_TN2501008
+  },
+  {
+    title: "Rector of Estonia’s Tallinn ...",
+    date: "Jan 27, 2025",
+    src: TUM_TN2501007
+  },
+  {
+    title: "KMA lauds TUM for quality trai...",
+    date: "Jan 22, 2025",
+    src: TUM_TN2501006
+  },
+  {
+    title: "TUM marines domineer EA in rug...",
+    date: "Jan 17, 2025",
+    src: TUM_TN2501005
+  },
+  {
+    title: "Northeastern University partne...",
+    date: "Jan 17, 2025",
+    src: TN2501004
+  },
+  {
+    title: "TUM receives medical equipment...",
+    date: "Jan 13, 2025",
+    src: tum_tn2501003
+  },
+  {
+    title: "We want to excel in maritime t...",
+    date: "Dec 10, 2024",
+    src: tum_tn2412087
+  }
+];
+export const callToAction =[
+  { text: "Seize the opportunity and take charge of your destiny today by joining our dynamic community of learners at sea level.", btn: "Apply Now" },
+  { text: "Need funding for a student loan or scholarship?", btn: "Apply Here" }
+  ]

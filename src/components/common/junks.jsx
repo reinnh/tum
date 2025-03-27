@@ -1,4 +1,4 @@
- 
+ //junk navBar ...crud data not rrsponsive   at all
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 

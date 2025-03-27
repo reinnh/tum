@@ -1,18 +1,28 @@
 import React from "react";
-
+import Navbar from "../components/common/navbar";
+import { ContactSocialLinks } from "./home";
+import joelpic from '../assets/joel.jpg'
 const CampusLife = () => {
   return (
-    <div className="bg-gray-100 min-h-screen p-6">
-      <div className="max-w-4xl mx-auto bg-white shadow-lg p-6 rounded-lg">
+   <>
+    <Navbar/>
+   <div className="pt-20">
+     <ContactSocialLinks/>
+     <div className="w-full bg-black flex justify-center items-center py-7 text-2xl text-white">Campus Life</div>
+    <div className="bg-gray-100  p-6">
+
+      <div className="max-w-6xl mx-auto  bg-white shadow-lg p-6 rounded-lg">
         <h2 className="text-xl font-bold mb-4">STUDENTS SERVICES DEPARTMENT</h2>
         <div className="flex flex-col md:flex-row gap-6">
+          <div className="min-w-70 flex flex-col gap-y-4">
           <img
-            src="/path-to-image.jpg"
+            src={joelpic}
             alt="Mr. JOEL OLUOCH AWINO"
-            className="w-48 h-auto rounded-lg shadow-md"
+            className=" rounded-lg shadow-md"
           />
+          <p className="text-lg font-semibold">Mr. JOEL OLUOCH AWINO</p>
+          </div>
           <div>
-            <p className="text-lg font-semibold">Mr. JOEL OLUOCH AWINO</p>
             <p className="mt-2 text-gray-700">
               Welcome to the Students Services Department web page.
             </p>
@@ -35,6 +45,8 @@ const CampusLife = () => {
         </div>
       </div>
     </div>
+    </div>
+   </>
   );
 };
 

@@ -14,7 +14,7 @@ export default function EventSection() {
                 <h2 className="text-xl font-bold border-b mb-4 pb-2 border-gray-200">EVENTS</h2>
                 <div className="space-y-4">
                     {events.map((event, index) => (
-                        <motion.div animate={{y:['0',"-120%",'-120%','-120%','0%','0']}} transition={{duration:10, ease:easeIn, repeat:Infinity}} key={`event-${index}`}  whileHover={{ scale: 1.02 }} className="flex gap-4 items-center p-4 border rounded-lg border-gray-100 shadow">
+                        <motion.div animate={{y:['0',"-120%",'-120%','-120%','0%','0']}} transition={{duration:10, ease:easeIn, repeat:Infinity}} key={`eventsection-${index}`}  whileHover={{ scale: 1.02 }} className="flex gap-4 items-center p-4 border rounded-lg border-gray-100 shadow">
                             <div className="border-2 border-green-500 p-4 text-center rounded-md">
                                 <p className="text-xl font-bold">{event.date.split(" ")[0]}</p>
                                 <p>{event.date.split(" ")[1]}</p>
@@ -35,8 +35,8 @@ export default function EventSection() {
                 <h2 className="text-xl font-bold border-b mb-4 pb-2 border-gray-200">NOTICE BOARD</h2>
                 <div className="space-y-5 pl-2">
                     {notices.map((notice, index) => (
-                        <div className="">
-                            <motion.p key={index} whileHover={{ x: 5 }} className=" cursor-pointer">{notice} <ArrowRight size={16} /></motion.p>
+                        <div  key={`notice-${index}`} className="">
+                            <motion.p whileHover={{ x: 5 }} className=" cursor-pointer">{notice} <ArrowRight size={16} /></motion.p>
                             <a className="text-green-800 font-bold" href={null}>Read More</a>
                         </div>
                     ))}

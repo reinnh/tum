@@ -17,13 +17,13 @@ export default function NewsSection() {
                 alt={news.title}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold">{news.title}</h3>
+              <div className="p-4  flex flex-col gap-y-3">
+                <h3 className=" font-semibold">{news.title}</h3>
                 <div className="flex justify-between text-sm text-gray-500 mt-2">
                   <span className="font-bold text-green-600">{news.author}</span>
                   <span>{news.date}</span>
                 </div>
-                <GreenButton text={'read more'} id={news.id} onClick={null}/>
+                <GreenButton text={'read more'} id={news.id} link={news.link} />
               </div>
             </div>
           ))}

@@ -1,3 +1,5 @@
+//contains all the login forms of the page
+
 import React from "react";
 import { User, Lock } from "lucide-react";
 import { motion } from "framer-motion";
