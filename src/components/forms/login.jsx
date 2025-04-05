@@ -1,5 +1,5 @@
 //contains all the login forms of the page
-
+import { useState } from "react";
 import React from "react";
 import { User, Lock } from "lucide-react";
 import { motion } from "framer-motion";
@@ -7,23 +7,82 @@ import intranebg from '../../assets/intranet.svg'
 import logoSvg from '../../assets/logo.svg'
 import bgImage from '../../assets/bg.jpg'
 import bunner from '../../assets/banner1.jpg'
+import { loginfunc } from "../../hooks/sendlogins.js";
+import axios from "axios"
 
 export function Login() {
+    const [loginData, setLoginData] = useState({ email: "", password: "" });
+    const [error, setError] = useState("");
+  
+    const handleChange = (e) => {
+      setLoginData({ ...loginData, [e.target.name]: e.target.value });
+    };
+  
+    const loginfunc = async () => {
+        console.log(loginData)
+      try {
+        setError("");
+  
+        const res = await axios.post(
+          "http://localhost:5000/tum/auth/login",
+          {
+            email: loginData.email, // assuming 'name' is actually email in your backend
+            password: loginData.password,
+          },
+          {
+            withCredentials: true,
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+  
+        alert("Login successful ✅");
+        console.log("Response:", res.data);
+  
+        // Redirect, fetch profile, or update global state here
+      } catch (err) {
+        console.error("Login error:", err);
+        setError(err.response?.data?.message || "Login failed");
+      }
+    };
+  
     return (
-        <>
-            <div className="container flex justify-center">
-                <div className="container p-4 flex flex-col gap-6 items-center w-full max-w-md max-auto">
-                    <input type="text" placeholder='username' id='username' className='bg-white border-gray-300  border-1  w-full px-5 py-4  rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500' />
-                    <input type="password" name="" id="password" placeholder='password' className='bg-white  border-gray-300 border-1  w-full px-5 py-4 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500' />
-                    <div className='flex justify-between text-lg w-full'>
-                        <p className='text-blue-400 cursor-pointer'><a href=""></a>forget password?</p>
-                        <button type="button" className=' bg-lime-200 py-2 px-3 font-[500] active:bg-lime-100 text-green-800 rounded-[5px] flex items-center cursor-pointer'>sign in</button>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
-}
+      <div className="container flex justify-center">
+        <div className="p-4 flex flex-col gap-6 items-center w-full max-w-md">
+          <input
+            onChange={handleChange}
+            value={loginData.email}
+            type="text"
+            name="email"
+            placeholder="Username or Email"
+            className="bg-white border border-gray-300 w-full px-5 py-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+  
+          <input
+            onChange={handleChange}
+            value={loginData.password}
+            name="password"
+            placeholder="Password"
+            className="bg-white border border-gray-300 w-full px-5 py-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+  
+          {error && <p className="text-red-500 text-sm">{error}</p>}
+  
+          <div className="flex justify-between text-lg w-full">
+            <p className="text-blue-400 cursor-pointer">Forgot password?</p>
+            <button
+              type="button"
+              className="bg-lime-200 py-2 px-3 font-medium text-green-800 rounded-md hover:bg-lime-100 active:scale-[0.98] transition-all"
+              onClick={loginfunc}
+            >
+              Sign In
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
 
 export function IntraNet() {

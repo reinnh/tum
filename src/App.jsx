@@ -16,6 +16,8 @@ import Navbar from './components/common/navbar'
 import EventsList from './pages/mediadesk/events'
 import { NewsGrid } from './pages/mediadesk/news'
 import './App.css'
+import Dashboard from './components/dashboards/tummis'
+import ElearningDashboard from './components/dashboards/elearning'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -33,6 +35,8 @@ function App() {
           <Route path='/business' element={<Business />} />
           <Route path='/humanity' element={<Humanity />} />
           <Route path='/health' element={<Helth />} />
+          <Route path='/tummisdashboard' element={<Dashboard/>} />
+          <Route path='/edash' element={<ElearningDashboard/>} />
           <Route path='/news' element={<NewsGrid/>}/>
           <Route path='/eventlist' element={<EventsList />} />
           <Route path='/campuslife' element={
