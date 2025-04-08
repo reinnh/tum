@@ -41,7 +41,7 @@ const Sidebar = () => {
       </div>
 
       {/* Static Sidebar on md+ */}
-      <div className="hidden md:flex flex-col w-64 h-screen bg-green-600 text-white p-6 space-y-6 fixed">
+      <div className="hidden md:flex flex-col w-64 h-screen bg-green-600 text-white p-6 space-y-6 fixed md:relative">
         {navLinks.map((link) => (
           <Link
             key={link.path}

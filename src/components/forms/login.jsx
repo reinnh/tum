@@ -23,24 +23,12 @@ export function Login() {
       try {
         setError("");
   
-        const res = await axios.post(
-          "http://localhost:5000/tum/auth/login",
-          {
-            email: loginData.email, // assuming 'name' is actually email in your backend
-            password: loginData.password,
-          },
-          {
-            withCredentials: true,
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
-  
+        const res = await axios.post("http://localhost:5000/tum/auth/login",{email: loginData.email, password: loginData.password,},{withCredentials: true,});
         alert("Login successful ✅");
         console.log("Response:", res.data);
   
         // Redirect, fetch profile, or update global state here
+        
       } catch (err) {
         console.error("Login error:", err);
         setError(err.response?.data?.message || "Login failed");
